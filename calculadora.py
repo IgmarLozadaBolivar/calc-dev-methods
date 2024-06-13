@@ -2,7 +2,7 @@ import os
 
 def limpiar_pantalla():
     os.system('cls' if os.name == 'nt' else 'clear')
-
+""" "6. Validar si es par\n" + """
 def menu():
     while True:
         try:
@@ -16,7 +16,6 @@ def menu():
                             "3. Multiplicación\n" +
                             "4. División\n" +
                             "5. Salir del programa\n" +
-                            "6. Validar si es par\n" +
                             "Ingrese una opción: "))
             return opcion
         except ValueError:
@@ -73,27 +72,47 @@ while True:
     opcion = menu()
 
     if opcion == 1:
+        limpiar_pantalla()
+        print("-----------------")
+        print("OPERACION DE SUMA")
+        print("-----------------\n")
         numero1 = int(input('Ingrese un número: '))
         numero2 = int(input('Ingrese otro número: '))
         suma(numero1, numero2)
     elif opcion == 2:
+        limpiar_pantalla()
+        print("------------------")
+        print("OPERACION DE RESTA")
+        print("------------------\n")
         numero1 = int(input('Ingrese un número: '))
         numero2 = int(input('Ingrese otro número: '))
         resta(numero1, numero2)
     elif opcion == 3:
+        limpiar_pantalla()
+        print("---------------------------")
+        print("OPERACION DE MULTIPLICACION")
+        print("---------------------------\n")
         numero1 = float(input('Ingrese un número: '))
         numero2 = float(input('Ingrese otro número: '))
         multiplicacion(numero1, numero2)
     elif opcion == 4:
+        limpiar_pantalla()
+        print("---------------------")
+        print("OPERACION DE DIVISION")
+        print("---------------------\n")
         numero1 = int(input('Ingrese un número: '))
         numero2 = int(input('Ingrese otro número: '))
         division(numero1, numero2)
     elif opcion == 5:
+        limpiar_pantalla()
         print("Saliendo del programa...")
         break
     else:
         print("Opción no válida, por favor ingrese una opción del 1 al 5.")
         pausa()
     """ elif opcion == 6:
+        print("-------------------------")
+        print("VALIDAR SI ES PAR O IMPAR")
+        print("-------------------------\n")
         numero = int(input("Ingrese un número: "))
         par(numero) """
