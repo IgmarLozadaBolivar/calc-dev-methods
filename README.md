@@ -16,19 +16,16 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
 ## Requerimientos funcionales 📋<br>
-🎯 La calculadora debe ser capaz de realizar las siguientes operaciones básicas: suma, resta, multiplicación, división 🚧 <br>
+🎯 La calculadora debe ser capaz de realizar las siguientes operaciones básicas: suma, resta, multiplicación, división. 🚧 <br>
 🎯 La calculadora debe manejar adecuadamente los errores, como la división por cero, devolviendo un mensaje de error apropiado. 🚧 <br>
-🎯 La interfaz de usuario debe ser simple e intuitiva, permitiendo a los usuarios ingresar dos números y seleccionar una operación. 🚧 <br>
-🎯 La calculadora debe devolver el resultado de la operación seleccionada por el usuario. 🚧 <br>
+🎯 Permitir a los usuarios ingresar dos números y devolver el resultado esperado para el usuario. 🚧 <br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
 ## Requerimientos no funcionales ⚙️<br>
 🔰 La interfaz de usuario debe ser intuitiva y fácil de usar, permitiendo a los usuarios realizar cálculos sin necesidad de instrucciones detalladas. 🚧 <br>
-🔰 La calculadora debe proporcionar resultados instantáneamente sin retrasos perceptibles. 🚧 <br>
-🔰 El código debe ser claro y bien documentado para facilitar futuras modificaciones y mejoras. 🚧 <br>
+🔰 La calculadora debe proporcionar resultados instantáneamente sin retrasos perceptibles y manejar adecuadamente todas las entradas válidas e inválidas. 🚧 <br>
 🔰 La calculadora debe funcionar en cualquier sistema que soporte Python. 🚧 <br>
-🔰 El software debe ser fiable y funcionar correctamente en todo momento, manejando adecuadamente todas las entradas válidas e inválidas. 🚧 <br>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
 
@@ -36,8 +33,8 @@
 <details>
   <summary>Ver progreso de los requisitos</summary>
 
-#### Requisitos funcionales: `Total 0/4` 🚧 <br>
-#### Requisitos no funcionales: `Total 0/5` 🚧
+#### Requisitos funcionales: `Total 0/3` 🚧 <br>
+#### Requisitos no funcionales: `Total 0/3` 🚧
 
 </details>
 
