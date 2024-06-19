@@ -33,8 +33,8 @@
 <details>
   <summary>Ver progreso de los requisitos</summary>
 
-#### Requisitos funcionales: `Total 3/3` 🚧 <br>
-#### Requisitos no funcionales: `Total 3/3` 🚧
+#### Requisitos funcionales: `Total 0/3` 🚧 <br>
+#### Requisitos no funcionales: `Total 0/3` 🚧
 
 </details>
 
