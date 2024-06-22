@@ -2,7 +2,7 @@ import os
 
 def limpiar_pantalla():
     os.system('cls' if os.name == 'nt' else 'clear')
-""" "6. Validar si es par\n" + """
+    
 def menu():
     while True:
         try:
@@ -28,15 +28,25 @@ def pausa():
 
 def suma(numero1, numero2):
     resultado = numero1 + numero2
-    limpiar_pantalla()
-    print("El resultado de tu suma es:", resultado)
-    pausa()
+    if resultado % 1 == 0:
+        limpiar_pantalla()
+        print("El resultado de tu suma es:", round(resultado))
+        pausa()
+    else:
+        limpiar_pantalla()
+        print("El resultado de tu suma es:", resultado)
+        pausa()
 
 def resta(numero1, numero2):
     resultado = numero1 - numero2
-    limpiar_pantalla()
-    print("El resultado de tu resta es:", resultado)
-    pausa()
+    if resultado % 1 == 0:
+        limpiar_pantalla()
+        print("El resultado de tu resta es:", round(resultado))
+        pausa()
+    else:
+        limpiar_pantalla()
+        print("El resultado de tu resta es:", resultado)
+        pausa()
 
 def multiplicacion(numero1, numero2):
     resultado = numero1 * numero2
@@ -50,23 +60,18 @@ def multiplicacion(numero1, numero2):
         pausa()
 
 def division(numero1, numero2):
+    resultado = numero1 / numero2
     if numero2 == 0:
         print("No se permite la división por cero.")
-    else:
-        resultado = numero1 / numero2
+        pausa()
+    elif resultado % 1 == 0:
         limpiar_pantalla()
-        print("El resultado de tu división es:", resultado)
-    pausa()
-
-""" def par(numero):
-    if numero % 2 == 0:
-        limpiar_pantalla()
-        print("Tú número ingresado es par.")
+        print("El resultado de tu división es:", round(resultado))
         pausa()
     else:
         limpiar_pantalla()
-        print("Tú número ingresado es impar.")
-        pausa() """
+        print("El resultado de tu división es:", resultado)
+        pausa()
 
 while True:
     opcion = menu()
@@ -76,16 +81,16 @@ while True:
         print("-----------------")
         print("OPERACION DE SUMA")
         print("-----------------\n")
-        numero1 = int(input('Ingrese un número: '))
-        numero2 = int(input('Ingrese otro número: '))
+        numero1 = float(input('Ingrese un número: '))
+        numero2 = float(input('Ingrese otro número: '))
         suma(numero1, numero2)
     elif opcion == 2:
         limpiar_pantalla()
         print("------------------")
         print("OPERACION DE RESTA")
         print("------------------\n")
-        numero1 = int(input('Ingrese un número: '))
-        numero2 = int(input('Ingrese otro número: '))
+        numero1 = float(input('Ingrese un número: '))
+        numero2 = float(input('Ingrese otro número: '))
         resta(numero1, numero2)
     elif opcion == 3:
         limpiar_pantalla()
@@ -100,8 +105,8 @@ while True:
         print("---------------------")
         print("OPERACION DE DIVISION")
         print("---------------------\n")
-        numero1 = int(input('Ingrese un número: '))
-        numero2 = int(input('Ingrese otro número: '))
+        numero1 = float(input('Ingrese un número: '))
+        numero2 = float(input('Ingrese otro número: '))
         division(numero1, numero2)
     elif opcion == 5:
         limpiar_pantalla()
@@ -110,9 +115,3 @@ while True:
     else:
         print("Opción no válida, por favor ingrese una opción del 1 al 5.")
         pausa()
-    """ elif opcion == 6:
-        print("-------------------------")
-        print("VALIDAR SI ES PAR O IMPAR")
-        print("-------------------------\n")
-        numero = int(input("Ingrese un número: "))
-        par(numero) """
